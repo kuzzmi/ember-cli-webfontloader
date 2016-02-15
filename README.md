@@ -1,8 +1,6 @@
-# Ember CLI WebFontLoader
+# ember-cli-webfontloader
 
-WebFontLoader wrapper for Ember CLI
-
-This README outlines the details of collaborating on this Ember addon.
+WebFontLoader wrapper for Ember CLI. This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
