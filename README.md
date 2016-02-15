@@ -1,4 +1,4 @@
-# Ember-cli-webfontloader
+# Ember CLI WebFontLoader
 
 WebFontLoader wrapper for Ember CLI
 
