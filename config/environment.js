@@ -1,5 +1,11 @@
 'use strict';
 
-module.exports = function(/* environment, appConfig */) {
-  return { };
+module.exports = function() {
+    return { 
+        webFontLoader: {
+            google: {
+                families: ['Roboto Mono']
+            }
+        } 
+    };
 };

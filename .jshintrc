@@ -15,6 +15,7 @@
   "immed": false,
   "laxbreak": false,
   "newcap": true,
+  "node": true,
   "noarg": true,
   "noempty": false,
   "nonew": false,
