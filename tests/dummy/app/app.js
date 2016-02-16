@@ -2,6 +2,7 @@ import Ember from 'ember';
 import Resolver from 'ember/resolver';
 import loadInitializers from 'ember/load-initializers';
 import config from './config/environment';
+import WebFont from 'webfontloader';
 
 var App;
 
@@ -12,6 +13,15 @@ App = Ember.Application.extend({
   podModulePrefix: config.podModulePrefix,
   Resolver: Resolver
 });
+
+window.WebFontConfig = {
+    active: function() {
+        console.log('Aaaaaa');
+    },
+    loading: function() {
+        alert('aaaa')
+    }
+};
 
 loadInitializers(App, config.modulePrefix);
 
