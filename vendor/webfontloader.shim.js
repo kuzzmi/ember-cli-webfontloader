@@ -1,9 +1,13 @@
 /* globals WebFont */
+/* globals define */
 
 define('webfontloader', [], function() {
   'use strict';
 
+  let WebFontConfig = {};
+
   return {
-    'default': WebFont
+    'WebFont': WebFont,
+    'WebFontConfig': WebFontConfig
   };
 });

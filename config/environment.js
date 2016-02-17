@@ -2,7 +2,7 @@
 
 module.exports = function() {
     return { 
-        webFontLoader: {
+        webFontConfig: {
             google: {
                 families: ['Roboto Mono']
             }

@@ -2,7 +2,7 @@ import Ember from 'ember';
 import Resolver from 'ember/resolver';
 import loadInitializers from 'ember/load-initializers';
 import config from './config/environment';
-import WebFont from 'webfontloader';
+import { WebFontConfig } from 'webfontloader';
 
 var App;
 
@@ -14,15 +14,14 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-window.WebFontConfig = {
-    active: function() {
-        console.log('Aaaaaa');
-    },
-    loading: function() {
-        alert('aaaa')
-    }
-};
+WebFontConfig.loading = () => {
+    console.log('WebFontConfig loading here');
+}
 
 loadInitializers(App, config.modulePrefix);
+
+WebFontConfig.active = () => {
+    console.log('WebFontConfig loaded here');
+}
 
 export default App;
