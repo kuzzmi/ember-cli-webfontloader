@@ -3,7 +3,7 @@ import Ember from 'ember';
 import ENV from '../config/environment'; 
 import { WebFont } from 'webfontloader';
 
-export function initialize(container, application) {
+export function initialize(application) {
 	// Checking configuration for webFontConfig
     if (!Ember.get(ENV, 'webFontConfig')) {
         return;
