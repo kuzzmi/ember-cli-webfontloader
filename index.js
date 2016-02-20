@@ -11,7 +11,7 @@ module.exports = {
         });
         this.app.import('vendor/webfontloader.shim.js', {
             type: 'vendor',
-            exports: { 'webfontloader': ['WebFont', 'WebFontConfig'] }
+            exports: { 'webfontloader': ['WebFont'] }
         });
     }
 

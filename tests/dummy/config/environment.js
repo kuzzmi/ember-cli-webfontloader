@@ -16,7 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    }, 
+
+    contentSecurityPolicy: {
+        'script-src': "'self' 'unsafe-inline' kuzzmi.disqus.com referrer.disqus.com www.google-analytics.com",
+        'style-src': "'self' 'unsafe-inline' use.typekit.net fonts.googleapis.com a.disquscdn.com",
+        'child-src': "'self' 'unsafe-inline' disqus.com",
+        'font-src': "'self' 'unsafe-inline' fonts.gstatic.com",
+        'img-src': "'self' 'unsafe-inline' www.gravatar.com a.disquscdn.com referrer.disqus.com",
+        'connect-src': "'self' http://localhost:3000"
+    },
   };
 
   if (environment === 'development') {
