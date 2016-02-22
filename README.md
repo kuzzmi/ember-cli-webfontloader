@@ -90,4 +90,6 @@ WebFont.on('fontinactive', (familyName, fvd) => {
 });
 ```
 
+For more information on using WebFontLoader, visit [https://github.com/typekit/webfontloader](https://github.com/typekit/webfontloader).
+
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
