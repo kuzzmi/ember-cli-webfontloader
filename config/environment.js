@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = function() {
-    return { 
+    return {
         webFontConfig: {
-            google: {
-                families: ['Roboto Mono']
-            }
-        } 
+            // google: {
+            //     families: ['Roboto Mono']
+            // }
+        }
     };
 };
