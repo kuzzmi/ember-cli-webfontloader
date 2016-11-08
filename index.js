@@ -5,12 +5,12 @@ var filterInitializers = require('fastboot-filter-initializers');
 
 module.exports = {
     name: 'ember-cli-webfontloader',
-    
-    preconcatTree: function(tree) {
+
+    preconcatTree(tree) {
         return filterInitializers(tree, this.app.name);
     },
 
-    included: function(app) {
+    included(app) {
         this._super.included(app);
 
         if (!process.env.EMBER_CLI_FASTBOOT) {
