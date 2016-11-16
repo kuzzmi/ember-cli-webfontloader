@@ -3,9 +3,6 @@ language: node_js
 node_js:
   - "node"
   - "6"
-  - "5"
-  - "0.12"
-  - "iojs"
 
 sudo: false
 
@@ -27,7 +24,6 @@ matrix:
 before_install:
   - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
   - "npm config set spin false"
-  - "npm install -g npm@^2"
 
 install:
   - npm install -g bower
