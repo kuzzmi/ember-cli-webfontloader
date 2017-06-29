@@ -1,11 +1,10 @@
+/* eslint-env node */
 'use strict';
 
-module.exports = function() {
+module.exports = function(/* environment, appConfig */) {
+  module.exports = function() {
     return {
-        webFontConfig: {
-            // google: {
-            //     families: ['Roboto Mono']
-            // }
-        }
-    };
+        webFontConfig: {}
+    }
+  }
 };
