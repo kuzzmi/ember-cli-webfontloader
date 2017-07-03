@@ -19,7 +19,7 @@ export default function setupWebFont(config) {
         },
 
         // Real `active` callback
-        onActive() { 
+        onActive() {
             events.state = 'active';
             let funcs = events.eventHandlers.active;
 
@@ -27,7 +27,7 @@ export default function setupWebFont(config) {
         },
 
         // Real `inactive` callback
-        onInactive() { 
+        onInactive() {
             events.state = 'inactive';
             let funcs = events.eventHandlers.inactive;
 
@@ -35,7 +35,7 @@ export default function setupWebFont(config) {
         },
 
         // Real `loading` callback
-        onLoading() { 
+        onLoading() {
             events.state = 'loading';
             let funcs = events.eventHandlers.loading;
 
@@ -43,8 +43,8 @@ export default function setupWebFont(config) {
         },
 
         // Real `fontactive` callback
-        onFontactive(familyName, fvd) { 
-            // we do not need to set the state here as well as let 
+        onFontactive(familyName, fvd) {
+            // we do not need to set the state here as well as let
             // the function to be called immediately
             let funcs = events.eventHandlers.fontactive;
 
@@ -52,8 +52,8 @@ export default function setupWebFont(config) {
         },
 
         // Real `fontinactive` callback
-        onFontinactive(familyName, fvd) { 
-            // we do not need to set the state here as well as let 
+        onFontinactive(familyName, fvd) {
+            // we do not need to set the state here as well as let
             // the function to be called immediately
             let funcs = events.eventHandlers.fontinactive;
 
@@ -61,8 +61,8 @@ export default function setupWebFont(config) {
         },
 
         // Real `fontloading` callback
-        onFontloading(familyName, fvd) { 
-            // we do not need to set the state here as well as let 
+        onFontloading(familyName, fvd) {
+            // we do not need to set the state here as well as let
             // the function to be called immediately
             let funcs = events.eventHandlers.fontloading;
 
@@ -72,7 +72,7 @@ export default function setupWebFont(config) {
 
     WebFont.__events__ = events;
 
-    // Adds a callback to the eventHandlers[event] list and 
+    // Adds a callback to the eventHandlers[event] list and
     // if "toRun" is true and the current state is event name,
     // we need to run callback function after we add it to the list
     WebFont.on = (event, callback, toRun) => {
@@ -90,7 +90,7 @@ export default function setupWebFont(config) {
     config.active       = events.onActive;
     config.inactive     = events.onInactive;
     config.fontloading  = events.onFontloading;
-    config.fontactive   = events.onFontactive;    
+    config.fontactive   = events.onFontactive;
     config.fontinactive = events.onFontinactive;
 
     WebFont.load(config);

@@ -1,22 +1,23 @@
 import Ember from 'ember';
-import initializer from '../../../initializers/ember-cli-webfontloader';
+import setupWebFont from 'ember-cli-webfontloader/initializers/ember-cli-webfontloader';
 import { module, test } from 'qunit';
-
-var registry, application;
+import destroyApp from '../../helpers/destroy-app';
 
 module('Unit | Initializer | ember cli webfontloader', {
-  beforeEach: function() {
-    Ember.run(function() {
-      application = Ember.Application.create();
-      registry = application.registry;
-      application.deferReadiness();
+  beforeEach() {
+    Ember.run(() => {
+      this.application = Ember.Application.create();
+      this.application.deferReadiness();
     });
+  },
+  afterEach() {
+    destroyApp(this.application);
   }
 });
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  initializer.initialize(registry, application);
+  setupWebFont({});
 
   // you would normally confirm the results of the initializer here
   assert.ok(true);
