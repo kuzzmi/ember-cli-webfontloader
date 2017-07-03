@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kuzzmi/ember-cli-webfontloader.svg?branch=master)](https://travis-ci.org/kuzzmi/ember-cli-webfontloader)
+ 
 # ember-cli-webfontloader
 
 WebFontLoader wrapped in Ember CLI addon. Allows you to subscribe to events and configure fonts through your Ember environment configuration file.
