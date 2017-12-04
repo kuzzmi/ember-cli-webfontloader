@@ -10,15 +10,15 @@ WebFontLoader wrapped in Ember CLI addon. Allows you to subscribe to events and 
 ember install ember-cli-webfontloader
 ```
 
-## Versionining
+## Versioning
 
 Take into account that version >= 0.4.x of this addon require Ember 2.x and fastboot >=1.0.rc1
-Please use 0.3.2 if you don't fulfull both requirements.
+Please use 0.3.2 if you don't fulfill both requirements.
 
 
 ## Configuration
 
-To load fonts you have to configure your `config/environment.js` file and set font-families as propery of `webFontConfig` object.
+To load fonts you have to configure your `config/environment.js` file and set font-families as property of `webFontConfig` object.
 
 For details about the WebFont configuration please refer WebFontLoader official [documentation](https://github.com/typekit/webfontloader/blob/master/README.md)
 
@@ -55,7 +55,7 @@ To add event handlers you have to import WebFont to your file:
 import { WebFont } from 'webfontloader';
 ```
 
-After doing that you can add hanlders by using `WebFont.on()` function, its signature is following:
+After doing that you can add handlers by using `WebFont.on()` function, its signature is following:
 
 ```
 on(string event, function fn, boolean runIfActive)
